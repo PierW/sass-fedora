@@ -48,8 +48,11 @@ nav {
   margin-top: 70px;
   height: 90vh;
 
-  img {
-    width: 100%;
+  > .carousel-inner{
     height: 100%;
+  }
+
+  img {
+    max-width: 100%;
   }
 }

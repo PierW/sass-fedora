@@ -59,8 +59,11 @@ nav > .right-side > ul li .fas {
   height: 90vh;
 }
 
-#slider img {
-  width: 100%;
+#slider > .carousel-inner {
   height: 100%;
+}
+
+#slider img {
+  max-width: 100%;
 }
 
