@@ -16,18 +16,39 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  .careers-content{
-    width: 60%;
-    @include t-center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#press{
+  position: relative;
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_tuna.jpg");
+  height: calc(100% - 70px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    > p {
-      color: $textlight;
-      @include sizepar;
-    }
+#contact{
+  position: relative;
+  background-color: $textpink;
+  height: calc(100% - 70px);
+
+   button {
+    color: $textpink;
+    background-color: $backlight;
+  }
+}
+
+.parallax-content{
+  width: 60%;
+  @include t-center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  > p {
+    color: $textlight;
+    @include sizepar;
   }
 }
