@@ -1,0 +1,33 @@
+#aboutus{
+  @include t-center;
+
+  > p {
+    width: 60%;
+    margin: auto;
+    @include sizepar;
+  }
+}
+
+#careers{
+  position: relative;
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_careers_parallax_2.jpg");
+  height: calc(100% - 70px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .careers-content{
+    width: 60%;
+    @include t-center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > p {
+      color: $textlight;
+      @include sizepar;
+    }
+  }
+}

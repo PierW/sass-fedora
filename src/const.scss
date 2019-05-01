@@ -1,6 +1,14 @@
 $backlight: white;
-$textpink: #E5639A;
+$textpink: #D70F64;
 $textlight: white;
+
+@mixin t-center {
+  text-align: center;
+}
+
+@mixin sizepar {
+  font-size: 1.2em;
+}
 
 *{
   box-sizing: border-box;
@@ -8,6 +16,22 @@ $textlight: white;
   padding: 0;
 }
 
-body{
+body, html{
   font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+button{
+  color: $textlight;
+  background-color: $textpink;
+  width: 210px;
+  height: 48px;
+
+  &:hover{
+    background-color: darken($textpink, 10%);
+  }
+}
+
+.subtitle{
+  color: $textpink;
 }

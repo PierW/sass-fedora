@@ -4,8 +4,25 @@
   padding: 0;
 }
 
-body {
+body,
+html {
   font-family: "Lato", sans-serif;
+  height: 100%;
+}
+
+button {
+  color: white;
+  background-color: #D70F64;
+  width: 210px;
+  height: 48px;
+}
+
+button:hover {
+  background-color: #a70c4e;
+}
+
+.subtitle {
+  color: #D70F64;
 }
 
 nav {
@@ -40,7 +57,7 @@ nav > .right-side {
 nav > .right-side > ul {
   list-style: none;
   text-transform: uppercase;
-  color: #E5639A;
+  color: #D70F64;
   line-height: 50px;
 }
 
@@ -56,7 +73,7 @@ nav > .right-side > ul li .fas {
 
 #slider {
   margin-top: 70px;
-  height: 90vh;
+  max-width: 100%;
 }
 
 #slider > .carousel-inner {
@@ -76,5 +93,40 @@ nav > .right-side > ul li .fas {
 
 #slider img {
   max-width: 100%;
+}
+
+#aboutus {
+  text-align: center;
+}
+
+#aboutus > p {
+  width: 60%;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+#careers {
+  position: relative;
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_careers_parallax_2.jpg");
+  height: calc(100% - 70px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#careers .careers-content {
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#careers .careers-content > p {
+  color: white;
+  font-size: 1.2em;
 }
 
