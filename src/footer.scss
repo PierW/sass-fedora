@@ -1,0 +1,28 @@
+footer{
+  padding: 32px 0;
+  border-top: 1px solid #E0E0E0;
+
+  > .foo-up, > .foo-down {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  > .foo-up  img {
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .foo-link-down > span {
+    cursor: pointer;
+
+    &:hover{
+      color: $textpink;
+    }
+
+    &:last-child{
+      padding-left: 5px;
+    }
+  }
+}
